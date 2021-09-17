@@ -26,11 +26,6 @@ function show(s)
 document.getElementById("slidervalue").innerHTML = s;
 }
 
-//function drop(m)
-//{
-//var m1 = parseInt(document.getElementById("Years").value); // Converting the string to integer
-//document.getElementById("selectvalue").innerHTML = m1;
-//}
 
 function calculate()
 {
@@ -51,9 +46,6 @@ var yr = new Date().getFullYear(); // Getting Current Year
 yr = yr + r ; 
 
 result = document.getElementById("result");
-//var color = "Red";
-//result.innerHTML = "If you deposit <font color =" + color + ">" + p + " </font>, at an interest rate of <font color =" + color + ">" + n + " </font> %,you will receive an amount of <font color =" + color + ">" + m + " </font>, in the year <font color =" + color + ">" + yr + ". </font>"; // Writing into HTML Element, innerHTML
-
 result.innerHTML = "If you deposit <mark> " + p + " </mark>, at an interest rate of <mark>" + n + " </mark> %.<br>You will receive an amount of <mark>" + m + " </mark>, in the year <mark>" + yr + ". </mark>"; // Writing into HTML Element, innerHTML
 }
 }
@@ -73,7 +65,6 @@ result.innerHTML = "If you deposit <mark> " + p + " </mark>, at an interest rate
 <p>
 <label for ="rate">Interest Rate:&nbsp;&nbsp;</label>
 <input type="range" id="rate" name ="rate"  min="1" max="20" step="0.1" value="0" onChange="show(this.value)" /> <!--Range slider -->
-<!--&nbsp;&nbsp;Interest rate is:&nbsp;-->
 <span id="slidervalue">1.0</span>
 <span id="perc">%</span>
 </p>
@@ -88,15 +79,12 @@ result.innerHTML = "If you deposit <mark> " + p + " </mark>, at an interest rate
 <option value="4">4</option>
 <option value="5">5</option>
 </select>
-<!--&nbsp;&nbsp;&nbsp;&nbsp;<span id="selectvalue">0</span>
-&nbsp;Years&nbsp;-->
 </p>
 
 <p>
 <input type="button" id="button" style="font-family:Times Roman; font-weight:bold; font-size:15px" value="Compute Interest"  onclick="calculate()"  
 align="center" />
 
-<!--Button-->
 
 </p>
 &copy;&nbsp;Everyone Can get rich.
